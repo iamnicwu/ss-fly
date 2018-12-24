@@ -45,7 +45,7 @@ install_ss() {
         fi
         check_os
         check_dependency
-        download_files
+        // download_files
         ps -ef | grep -v grep | grep -i "ssserver" > /dev/null 2>&1
         if [ $? -eq 0 ]; then
                 ssserver -c /etc/shadowsocks.json -d stop
